@@ -1,0 +1,80 @@
+
+/* ***********************VARIABLES***********************/
+// Variables 
+$color-fondo: #1c2a37
+$celeste-ejemplo:#1b8be7
+$Azul-ejemplo:#005cc8
+$color-textoGris: #d2d6db
+$color-textoBlanco: #fbfdfb
+$borde-radio: 0.25rem
+
+
+body
+    background-color: $color-fondo
+
+/*************************textos***********************/
+.texto-blanco 
+    color: $color-textoGris
+
+
+/*************************boton***********************/
+.button-celeste
+    background-color: $celeste-ejemplo
+    color: $color-textoBlanco
+    border: 0px solid 
+    border-radius: $borde-radio
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 8px
+    padding-bottom:8px
+    margin: 5px
+    &:hover
+        background-color: #127cd3
+    &:active
+        background-color: $color-fondo
+        border-bottom: 2px solid $Azul-ejemplo
+
+
+
+/*************************bordes***********************/
+.borde
+    border-radius: $borde-radio
+    padding: 10px
+    border: 1px solid $Azul-ejemplo
+
+.borde-bottom
+    padding: 5px
+    border-bottom: 1px solid $Azul-ejemplo
+
+
+/**********************DIV contenedor*****************/
+.contenedor
+    padding-left: 15%
+    padding-right: 15%
+    margin: 20px
+
+
+/**********************INPUT*****************/
+input
+    background-color: $color-fondo
+    color: $color-textoBlanco
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 8px
+    padding-bottom:8px
+    margin: 5px
+    border: 1px solid $Azul-ejemplo
+    border-radius: $borde-radio
+    width: 80%
+    &:focus
+        outline: none
+        border: 2px solid $Azul-ejemplo
+
+
+.input-check
+    width: 18px
+    height: 18px
+
+
+
+
