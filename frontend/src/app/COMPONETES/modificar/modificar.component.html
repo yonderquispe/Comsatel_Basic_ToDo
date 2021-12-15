@@ -1,0 +1,15 @@
+<div class="contenedor texto-blanco borde">
+    <div class="row">
+        <button class="boton-atras" [routerLink]="['/inicio']" routerLinkActive="router-link-active">
+            <img src="assets/iconos/exit.png" width="40" height="40">
+        </button>
+        <h3 class="centro">Comsaltel Basic ToDo</h3>
+    </div>
+
+    <h3 class="sub-titulo borde-bottom ">Tareas</h3>
+
+    <div class="row">
+        <input type="text" id="nombres" name="nombres" [(ngModel)]="tareaActual.tarea">
+        <button class="button-celeste" (click)="guardarCambio()"> guardar </button>
+    </div>
+</div>

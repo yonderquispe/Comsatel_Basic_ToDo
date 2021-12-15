@@ -1,5 +1,5 @@
 export interface Tarea {
-    Id?:String;
-    Tarea:string;
-    Id_EstadoTarea:string,
+    id?:String;
+    tarea:string;
+    finalizado:boolean;
 }

@@ -15,7 +15,14 @@ body
 /*************************textos***********************/
 .texto-blanco 
     color: $color-textoGris
+    
+.sub-titulo
+    width: 100px
 
+h3
+    margin-top: 5px
+    margin-bottom: 5px
+    
 
 /*************************boton***********************/
 .button-celeste
@@ -62,10 +69,10 @@ input
     padding-right: 20px
     padding-top: 8px
     padding-bottom:8px
-    margin: 5px
+    margin: 0px
     border: 1px solid $Azul-ejemplo
     border-radius: $borde-radio
-    width: 80%
+    width: 70%
     &:focus
         outline: none
         border: 2px solid $Azul-ejemplo
@@ -75,6 +82,37 @@ input
     width: 18px
     height: 18px
 
+.row
+    width: 100%
+    padding-bottom: 15px
+    padding-top: 15px
+.centro
+    text-align: center
 
 
+.boton-lista
+    float: right
+    background-color: $color-fondo
+    border: 0px solid 
+    border-radius: $borde-radio
+    padding: auto
+    margin: 5px
+    &:hover
+        border: 0px solid #127cd3
+        background-color: $celeste-ejemplo
+    &:active
+        border-bottom: 2px solid $Azul-ejemplo
 
+
+.boton-atras
+    float: left
+    background-color: $color-fondo
+    border: 0px solid 
+    border-radius: $borde-radio
+    padding: auto
+    margin: 5px
+    &:hover
+        border: 0px solid #127cd3
+        background-color: $celeste-ejemplo
+    &:active
+        border-bottom: 2px solid $Azul-ejemplo

@@ -1,1 +1,28 @@
-<p>tareas works!</p>
+<div class="contenedor texto-blanco">
+  <div class="row">
+    <h3 class="centro">Comsaltel Basic ToDo</h3>
+  </div>
+
+  <h3 class="sub-titulo borde-bottom ">Tareas</h3>
+
+  <div class="row">
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="tareaNuemva.tarea">
+    <button class="button-celeste" (click)="agregar()"> Agregar </button>
+  </div>
+  <div class="borde">
+    <ng-container *ngFor="let tarea of ListaTareas">
+      <div class=" borde-bottom row">
+        <h3>
+          <input type="checkbox" class="input-check" [(ngModel)]="tarea.finalizado" name="finalizafo"  (click)="checkear(tarea)"> 
+          {{tarea.tarea}}
+          <button class="boton-lista" (click)="eliminar(tarea.id)"><img src="assets/iconos/remove.png" width="25" height="25"></button>
+          <button class="boton-lista" [routerLink]="['/edit/',tarea.id]" routerLinkActive="router-link-active" >
+            <img src="assets/iconos/edit.png" width="25" height="25">
+          </button>
+        </h3>
+        <ng-container ></ng-container>
+
+      </div>
+    </ng-container>
+  </div>
+</div>
